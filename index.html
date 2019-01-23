@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>MANCHESTER UNITED</title>
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="stylesheet/style.css" /> <!-- link to the css file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- link to the icons -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Sofia"> <!-- link to google fonts -->
+<link rel="shortcut icon" href="images/logo.png"> <!-- icon on the title -->
+    
+</head>
+
+<body>
+    <!-- navigation bar -->
+	<header>
+		<nav class="topnav" id="navBar">
+			<a href="index.html" class="logo"><img src="images/logo.png" alt="logo" id="brand-logo"></a>
+			<a href="index.html" class="active">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="history.html">History</a>
+			<a href="calendar.html">Calendar</a>
+			<a href="players.html">Players</a>
+		</nav>
+	</header>
+    <!-- end of navigation bar -->
+    
+    
+    <!-- carousel -->
+    <div class="slideshowcontainer">
+        <div class="mySlides fade"> <!-- first slideshow -->
+            <img src="images/slideshow1.jpg" style="width:100%" alt="slideshow">
+            <div class="text">United's 600 Premier League wins</div>
+            <button type="button"><a href="news.html#600wins"> Read More</a></button>
+        </div> <!-- end of first slideshow -->
+        <div class="mySlides fade"> <!-- second slideshow -->
+            <img src="images/slideshow2.jpg" style="width:100%" alt="slideshow">
+            <div class="text">Manchester United in Europe League</div>
+            <button type="button"><a href="news.html#stockholm"> Read More</a></button>
+        </div> <!-- end of second slideshow -->
+        <div class="mySlides fade"><!-- third slideshow -->
+            <img src="images/slideshow3.jpg" style="width:100%" alt="slideshow">
+            <div class="text">Juan Mata's Blog</div>
+            <button type="button"><a href="http://juanmata8.com/blog"> Read More</a></button>
+        </div><!-- end of third slideshow -->
+        
+        <!-- buttons to browse previous and next slides -->    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- End of buttons -->
+        
+    </div>    
+    <!-- end of carousel -->
+    
+    <!-- section of match's result -->
+    <section class="indexcontainer">
+        <!-- last match -->
+        <div class="results">
+            <div class="main-info ">
+                <h3>April 5</h3>
+                <p>Premier League</p>
+            </div>
+            <div class="versus">
+                <div class="versusOne">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="versusSeparator">
+                    <div class="versus-content">
+                        <span>3-1</span>
+                    </div>
+                </div>
+                <div class="versusTwo">
+                    <img src="images/everton.png" alt="">
+                </div>        
+            </div>
+        </div> 
+        <!-- end of last match -->
+        <!-- next match -->
+        <div class="rightresults">
+            <div class="main-info">
+                <h3>April 9</h3>
+                <p>Premier League</p>
+            </div>
+            <div class="versus">
+                <div class="versusOne">
+                    <img src="images/sunderland.png" alt="">
+                </div>
+                <div class="versusSeparator">
+                    <div class="versus-content">
+                        <span>19:00</span>
+                    </div>
+                </div>
+                <div class="versusTwo">
+                    <img src="images/logo.png" alt="">
+                </div>        
+            </div>
+        </div>
+        <!-- end of next match -->
+    </section>
+    <!-- end of section -->
+    
+    <!-- section of news -->
+    <div class="newscontainer">
+        <!-- news -->
+        <div class="newscontent">
+            <fieldset> 
+                <legend>News</legend><!-- text inside of border -->
+                <div class="news1">
+                    <a href="news.html#foundation"><img src="images/10years.jpg" alt="news"></a>
+                    <h3>MU FOUNDATION STILL GOING STRONG 10 YEARS ON</h3>
+                    <p>From organising player visits and Santa Runs to working closely with local schools, Manchester United Foundation has helped to change the lives of many young people for the better...</p>
+                    <button type="button" class="btn"><a href="news.html#foundation">Read More</a></button>
+                </div>
+                <hr class="hr"> <!-- line under news -->
+                <div class="news2">
+                    <a href="news.html#mourinho"><img src="images/news1.jpg" alt="news"></a>
+                    <h3>MOURINHO CALLS FOR KILLER INSTINCT</h3>
+                    <p>Jose Mourinho says his Manchester United players have to work on killing teams off after the Reds were held once again this season at Old Trafford, there were too much draws...</p>
+                    <button type="button" class="btn"><a href="news.html#Mourinho">Read More</a></button>
+                </div>
+                <hr class="hr"> <!-- line under news -->
+                <div class="news3">
+                    <a href="news.html#Loan"><img src="images/news3.jpg" alt="news"></a>
+                    <h3>LOAN WATCH: YOUNG REDS MAKE PROGRESS </h3>
+                    <p>Andreas Pereira, Guillermo Varela, Sam Johnstone and Adnan Januzaj remain with their temporary clubs, while Dean Henderson, Cameron Borthwick-Jackson, Joe Riley, Joel Pereira and James Wilson have now returned to the Reds after brief spells elsewhere...</p>
+                    <button type="button" class="btn"><a href="news.html#Loan">Read More</a></button>
+                </div>
+            </fieldset>
+        </div>
+        <!-- end of news -->
+        
+        <!-- table and video -->
+        <div class="table">           
+            <!-- table -->
+            <table>
+                <tr><th colspan="4">English Premier League</th></tr>
+                <tr class="border_bottom"> 
+                    <td>№</td>
+                    <td>Clubs</td>
+                    <td>Games</td>
+                    <td>Points</td>
+                </tr>
+                <tr class="lchzone">
+                    <td>1</td>
+                    <td title="League Champions zone">Chelsea</td>
+                    <td>38 </td>
+                    <td>120</td>
+                </tr>         
+                <tr class="lchzone">
+                    <td>2</td>
+                    <td title="League Champions zone">Tottenham</td>
+                    <td>38 </td>
+                    <td>120</td>
+                </tr>         
+                <tr class="lchzone">
+                    <td>3</td>
+                    <td title="League Champions zone">Manchester City</td>
+                    <td>38 </td>
+                    <td>120</td>
+                </tr>         
+                <tr class="lchzone">
+                    <td>4</td>
+                    <td title="League Champions zone">Liverpool</td>
+                    <td>38 </td>
+                    <td>120</td>
+                </tr>         
+                    <tr class="lezone">
+                    <td><a>5</a></td>
+                    <td title="League Europe zone"><a>Manchester United</a></td>
+                    <td><a>38 </a></td>
+                    <td><a>120</a></td>
+                </tr>         
+                <tr class="lezone">
+                    <td>6</td>
+                    <td title="League Europe zone">Arsenal</td>
+                    <td>38 </td>
+                    <td>120</td>
+                </tr>         
+                <tr>
+                    <td>7</td>
+                    <td title="No zone">Everton</td>
+                    <td>38 </td>
+                    <td>120</td>
+                </tr>         
+            </table>
+            <!-- end of table --> 
+            <iframe src="https://www.youtube.com/embed/SYYChSWPcdg" allowfullscreen></iframe> <!-- link to the youtube video -->
+         </div>
+        <!-- end of table and video -->
+    </div>
+    <!-- end of section -->
+    
+    <!-- section of best players --> 
+    <section class="bestplayers">
+        <div class="bestplayertitle">
+            <h2>Best Players</h2>
+            <hr>
+        </div>
+        <div class="card">
+            <img src="images/degea.jpg" alt="Avatar" style="width:100%">
+            <div class="cardcontent">
+                <h4><b>David De Gea</b></h4>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/zlatan.jpg" alt="Avatar" style="width:100%">
+            <div class="cardcontent">
+                <h4><b>Zlatan Ibrahimovich</b></h4>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/valencia.jpg" alt="Avatar" style="width:100%">
+            <div class="cardcontent">
+                <h4><b>Antonio Valencia</b></h4>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/pogba.jpg" alt="Avatar" style="width:100%">
+            <div class="cardcontent">
+                <h4><b>Paul Pogba</b></h4>
+            </div>
+        </div>
+    </section>
+    <!-- end of section -->
+    
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <img src="images/logo.png" alt="logo">
+            <!-- used fontawesome for social network logos -->
+            <div class="footersocial">
+                <a href="https://www.facebook.com/manchesterunited/"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/manutd"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/manchesterunited/"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://vk.com/mufans"><i class="fa fa-2x fa-vk" aria-hidden="true"></i></a>
+            </div>
+            <!-- end of fontawesome -->
+            <div class="footertext">
+                © 2017 ManchesterUtd.com | MANCESTER UNITED. Informational portal about Manchester United.<br>
+                <p>Content of this site was borrowed from Official web-site of Manchester United.</p>
+            </div>  
+            <!-- sitemap -->
+            <div class="footermenu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="index.html">Players</a></li>
+                </ul>
+            </div>
+            <!-- end of sitemap -->
+        </div>
+    </footer>
+    <!-- end of footer -->
+     <script src="scripts/script.js"></script> <!-- end of body for working quickly -->
+</body>
+
+</html>

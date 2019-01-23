@@ -1,0 +1,714 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box; /* everycode will be inside of box, helps to not have horizontal line */
+}
+
+/* style for navigation bar */
+.topnav { 
+	background-color: #000; 
+    position: fixed; /* used for fixed the positionf of nav bar */
+    z-index: 999; 
+	overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+/* style for text inside of nav bar */
+.topnav a {
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 20px 17px 17px;
+	border-bottom: 3px solid transparent;
+	text-decoration: none; 
+	text-transform: uppercase;
+	font-family: "Helvetica";
+	font-size: 14px;	
+	font-weight: bold;
+	transition: all 0.5s ease;
+}
+/*hovering style*/
+.topnav a:hover {
+	border-bottom: 3px solid #e21b22;
+	transition: all 0.5s ease;
+	color: #e21b22; 
+}
+/*style for active menu */
+.topnav a.active {
+    background-color: #e21b22;
+    color: white;   
+}
+.topnav a.active:hover {
+	border-bottom: 3px solid darkgoldenrod;
+	transition: all 0.4s ease;
+}
+/* style for img */
+#brand-logo {
+	margin: -13px 30px -13px 45px;
+	height: 42px;
+	width: auto;
+}
+.logo {
+    cursor: pointer;
+    border-bottom: none !important;
+}
+/* style for slideshow */
+.mySlides {
+    display: none;
+    overflow: hidden;
+    height: 531px;
+}
+.mySlides button {
+    position: absolute; 
+    top: 70%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 18px;
+    padding: 6px 6px 6px 6px;
+    margin-left: 600px;
+    border-radius: 4px;
+}
+.mySlides button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.4s ease;
+}
+.mySlides a {
+    text-decoration: none;
+    color: white;
+}
+/* style for button which browses slides*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* style for text inside of slideshow */
+.text {
+    color: #ffffff;
+    font-size: 70px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 200px;
+    font-family: "simsun";
+    background-color: rgba(0, 0, 0, 0.9);
+}
+/* animation for chrome and safari*/
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}   
+/* animation for mozila*/
+@-moz-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}   
+/* animation for opera*/
+@-o-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+} 
+/* animation for Internet Explorer*/
+@-ms-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}   
+/* style for match's result */
+.indexcontainer {
+    width: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 15px 15px;
+    border-radius: 8px;
+    border: 1px solid silver;
+    
+}
+/* style for last match */
+.results {
+     width: 400px;
+    float: left;
+}
+/* style for next match */
+.rightresults {
+     width: 401px;
+    float:right;
+    border-left: 1px solid silver;
+}
+.main-info {
+    padding: 10px;
+    font-size: 22px;
+}
+.main-info p{
+    font-size: 17px;
+}
+/*style for match result*/
+.versus {
+    transition: all 0.2s ease;
+    filter: grayscale(100%);
+}
+.versus:hover {
+    filter: none;
+    transition: all 0.2s ease;
+}
+.versus img {
+    max-width: 95%;
+}
+/* style for div inside versus */
+.versus > div {
+      width: 150px;
+      float: left;
+ }
+/* style for result and time between last and next matches */
+.versus > .versusSeparator {
+    width: 100px;
+    display: table;
+    height: 155px;
+}
+/* style for result and time */
+.versus-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+/* style for the text of the versus-content */
+.versus-content span {
+    display: block;
+    background-color: #e21b22;
+    padding: 10px 4px 10px;
+    color: white;
+    font-size: 40px;
+    border-radius: 5px;
+}
+/* style for section of news */
+.newscontainer {
+    width: 1350px;
+    background-color: black;
+    margin-top: 4px;
+    height: 560px;
+}
+/* style for text inside of border */
+legend{
+    color:white;
+    font-size: 25px;
+    font-family: "Helvetica";
+    padding-top: 10px;
+    padding-left: 20px;
+}
+/* border which have text inside */
+fieldset {
+    border: 1px solid black;
+}
+/* left div of the newscontainer */
+.newscontent {
+    overflow: hidden;
+    width: 700px;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 2px;
+    display: inline-block;
+}
+/* image of the news */
+.newscontent img {
+    float: left;
+    width: 220px;
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+/* hovering style for image */
+.newscontent img:hover{
+    transition: all 0.4s ease;
+    opacity: 0.5;  /* invisibility */ 
+}
+.news1, .news2, .news3 {
+    padding-top: 10px;
+}
+.newscontent h3 {
+    padding-top: 10px;
+    padding-left: 230px;
+    color: red;
+} 
+.newscontent p {
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+    padding-left: 230px;
+}
+/* style for button inside of news */
+.btn {
+    background-color: #e21b22; 
+    border: none;
+    margin: 7px 10px 0 20px;
+    padding: 4px 6px;
+    display: inline-block;
+    font-size: 13px;
+}
+.btn a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+/* hovering style for button */
+.btn:hover{
+    border-left: 1px solid #e21b22;
+    border-right: 1px solid #e21b22;
+    transition: all 0.4s ease;
+}
+/* line under of news */
+.hr {
+    margin-top: 20px;
+}
+/* style for right side of newscontainer */
+.table {
+    background-color: #212020;
+    float: right;
+    width: 600px;
+    color: white;   
+    font-size: 18px;
+    margin-right: 2px;
+    height: 43%;
+    margin-top: 20px;  
+    text-align: center;
+}   
+.table table {
+    width: 100%;
+}
+.table th {
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+}
+tr.border_bottom td {
+    border-bottom:1pt solid silver;
+    border-top:1pt solid silver;
+    padding: 3px 3px 3px 3px;
+}
+table .lchzone {
+    background-color: #333333;
+}
+table .lezone {
+    background-color: #3f3f3f;
+}
+table a {
+    color: darkgrey;
+}
+tr {
+    transition: all 0.4s ease;
+}
+tr:hover {
+    background: #e21b22;
+    transition: all 0.4s ease;
+}
+/* style for video */
+iframe {
+    height: 100%;
+    margin-top: 20px;
+    width: 600px;
+    border: 0;
+}
+/* style for best players section */
+.bestplayers {  
+    width: 1350px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 15px 15px;
+}
+/* style for title of the best players section */
+.besttitle {
+    padding: 10px;
+    font-size: 22px;
+}
+/* style for line under title */
+.besttitle hr {
+    margin-top: 20px;
+    margin-right: 30px;
+}
+/* style for card of player */
+.card {
+    margin-top: 10px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* giving a shadow around of card */
+    width: 15%;
+    height: auto;
+    float: left;
+    margin-left: 100px;
+    filter: grayscale(100%); /* give some effects to the photo */
+    transition: all 0.3s ease;
+}
+/* hovering for card */
+.card:hover {
+    box-shadow: 0 14px 18px 0 rgba(0,0,0,0.2);
+    color: #e21b22;
+    filter: none;
+    transition: all 0.3s ease;
+}
+/* style for text in the card */
+.cardcontent {
+    font-size: 20px;
+    padding: 3px 3px 3px 3px;
+}
+/* style for footer */
+footer {
+    background-color: #212020;
+    width: 1200px;
+    margin-left: 70px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+/* text inside footer */
+.footertext {
+    width: 900px;
+    font-size: 15px;
+    color: #9E9E9E;
+    margin: 20px 154px;
+}
+.footertext p {
+    padding-top: 5px;
+}
+/* style for logo */
+footer img{
+    width: 80px;
+    float: left;
+    margin-left: 35px;
+    transition: all 0.3s ease;
+}
+/* zooming out of image */
+footer img:hover {
+    width: 82px;
+    transition: all 0.3s ease;
+}
+/* style of menu */
+.footermenu ul {
+    text-decoration: none;
+	font-family: "helvetica";
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 40px;
+}
+.footermenu a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #EBEBEB;
+    font-weight: 500;
+    font-size: 13px;
+    float: left;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 20px;
+    border-top: 1px solid silver;
+    transition: all 0.3s ease;
+}
+/* hovering the links in the footer */
+.footermenu a:hover {
+    color: #9E9E9E;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+/* style for social network part */
+.footersocial {
+    float: right;
+    padding-right: 20px;
+}
+/* style for font awesome */
+.fa {
+    color: white;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
+/* hovering the font awesome */
+.fa:hover {
+    color: black;
+    transition: all 0.2s ease;
+}
+ 
+/* about.html */
+.about {
+    position: relative;
+}
+.about img {
+    width: 100%;
+    height: 500px;
+}
+/* style for text inside of the image */
+.imgtext {
+    position: absolute;
+    color: #f1f1f1;
+    font-family: "Simsun";
+    bottom: 1%;
+    right: 25%;
+    font-size: 88px;
+}
+/* style for text */
+.aboutcontainer {
+    width: 1000px;
+    margin-top: 10px;
+    margin-left: 140px;
+    text-align: center;
+}
+/* title of about page */
+.abouttitle {
+    font-size: 50px;
+}
+.aboutcontainer p{
+    padding-top: 20px;
+}
+.aboutcontainer a{
+    color: black;
+}
+.aboutus .abouttitle {
+    font-size: 30px;
+}
+/* end of about.html */
+
+
+/* history.html */
+.history {
+    overflow: hidden;
+    background-color: black;
+    
+}
+/* button in tab menu */
+.history button {
+    font-weight: bolder;
+    color: white;
+    background-color: inherit;
+    float: left;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    transition: all 0.3s ease;
+}
+/* hovering the button of tab menu */
+.history button:hover {
+    background-color: #e21b22;
+    transition: all 0.3s ease;
+}
+/* active button of tab menu */
+.history button.active {
+    background-color: #e21b22;
+    border: none;
+}
+/* text of the history */
+.historycontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 1200px;
+    text-align: center;
+    margin-left: 60px;
+    overflow: hidden;
+    font-family: "Sofia";
+}
+.historycontent h3 {
+    font-size: 32px;
+}
+.historycontent img {
+    border-radius: 5px;
+}
+/* other settings */
+#manutd { 
+    width: 1200px; 
+    height: 500px;
+}
+#earlyy {
+    width: 500px;
+    height: 300px;
+}
+.earlyy {
+    margin-left: 520px;
+}
+.earlyyears {
+    float: left;
+}
+.busbybabes {
+    float: right;
+}
+.busby {
+    margin-right: 770px;
+}
+.y1986 {
+    margin-left: 580px;
+}
+#saf {
+    width: 1180px;
+    height: auto;
+}
+.class99 {
+    margin-top: 120px;
+    float: right;   
+}
+.text99 {
+    margin-top: 120px;
+    padding-right: 500px;
+}
+.lch {
+    margin-left: 850px;
+    height: auto;
+}
+#safstand {
+    width: 500px;
+}
+#charlton {
+    width: 600px;
+}
+.mainphoto {
+    width: 1180px;
+}
+/* end of other settings */
+/* end of history.html */
+
+/* news.html */
+.news {
+    padding-top: 70px;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Sofia";
+}
+/* image in news page */
+.news img {
+    width: 100%;
+    height: 500px;
+}
+/* section of news */
+.pagecontent {
+    margin-top: 9px;
+}
+/* style of title of news */
+.pagecontent h3 {
+    color: #db0000;
+    text-transform: uppercase;
+}
+/* style of text of news */
+.pagecontent p{
+    font-size: 14px;
+    width: 1300px;
+    margin-left: 20px;
+}
+/* style for button of "go to up" */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    bottom: 20px;
+    right: 30px; 
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; 
+    background-color:  rgba(0, 0, 0, 0.0);
+    color: black; 
+    cursor: pointer; /* Add a mouse pointer on hover */
+    text-align: center;
+}
+/* style for font awesome for go to up */
+.pagecontent i {
+    padding: 2px;
+    color: black;
+    font-size: 20px;
+}
+/* end of news.html */
+
+/* calendar.html */
+.calendarcontainer {
+    overflow: hidden;
+    width: 1350px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;  
+}
+/* style for images of match sections */
+.calendarcontainer img {
+    width: 100px;
+}
+.row {
+    height: 100px;
+    margin-top: 20px;   
+}
+.match {
+    width: 405px;
+    float: left;
+    border: 1px solid silver;
+    margin: 20px 20px 20px 20px;
+}
+.match .versus-content span {
+    display: block;
+    background-color: #e21b22;
+    padding: 2px 0 2px;
+    color: white;
+    font-size: 35px;
+    border-radius: 5px;
+}
+/* style for line under title */
+.line hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #fff, silver, #fff);
+}
+
+/* players.html */
+.playerscontainer {
+    overflow: hidden;
+    width: 1210px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px; 
+    font-family: "Helvetica";
+}
+/* images of players container */
+.playerscontainer img {
+    width: 300px;
+}
+/* stlye for images of manager staff */
+.manager img {
+    width: 300px;
+    height: 415px;
+}
+/* style for cards of players */
+.player {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    float: left;
+    margin-top: 50px;
+    margin-left: 80px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+/*    filter: blur(1px);*/
+    opacity: 0.8; /* invisibility */
+    transition: all 0.2s ease; /* effect */
+}
+.player a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+/* style for cards on hover */
+.player:hover {
+    transition: all 0.2s ease;
+    opacity: inherit;
+}
+/* style for position of players */
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+/* END OF CSS FYLE */
